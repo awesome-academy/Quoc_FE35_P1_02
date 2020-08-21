@@ -2,9 +2,7 @@
 @import ../base/_variables
 
 header
-
   .header__top-menu
-
     .header__top-menu--relative, .header__top-menu--absolute
       z-index: $z-index-header-top-menu
       
@@ -48,15 +46,14 @@ header
                 
                 &:not(:last-child)::after
                   content: none
+
           i 
             cursor: pointer
             @include transition
-
             @include lg
               display: none
 
         .header__top-menu__right
-
           input, button
             background-color: transparent
 
@@ -78,7 +75,6 @@ header
       position: relative
 
       .header__top-menu__left
-
         &:hover ul
           @include lg-max
             background-color: $color-white
@@ -96,7 +92,6 @@ header
       background-color: $color-transparent
 
       .header__top-menu__left
-
         &:hover ul
           @include lg-max
             background-color: $color-transparent
@@ -142,10 +137,8 @@ header
       right: 0
 
       .wrapper
-
         img 
           width: 60%
-          
           @include md
             width: 75%
 
@@ -189,7 +182,6 @@ header
         position: static
         @include xl 
           position: relative
-
         display: flex
         align-items: center
 
@@ -197,7 +189,6 @@ header
           color: $color-white
           font-size: $font-size-header-main-menu-list-icon
           cursor: pointer
-
           @include xl
             display: none
 
@@ -213,18 +204,15 @@ header
              @include pl-pr(0, 0)
 
             &:nth-child(2)
-
               .header__list__sub
                 position: absolute
                 top: 30%
                 left: 0
                 right: 0
-
                 @include xl
                   top: 100%
                   left: auto
                   right: 0
-                
                 visibility: hidden
                 display: flex
                 justify-content: center
@@ -246,7 +234,6 @@ header
                     
                   &:nth-child(3)
                     @include ml-mr(0, 0px)
-
                     @include xl
                       @include ml-mr(0, 25px)
                     
@@ -257,7 +244,6 @@ header
                     text-transform: uppercase
                   
                   .header__sub__item
-                    
                     li
                       float: none
                       @include mt-mb(0, 13px)
@@ -281,10 +267,8 @@ header
                   position: absolute
                   bottom: 100%
                   left: 50%
-
                   @include xl 
                     left: 24%
-
                   border-left: 8px solid transparent
                   border-right: 8px solid transparent
                   border-bottom: 8px solid $color-hover
