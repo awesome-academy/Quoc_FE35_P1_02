@@ -8,6 +8,11 @@ mixin title-product(text)
     p= text
     img(src='./assets/images/arrow.png')
 
+mixin price-product(num)
+  .price-product
+    p= num
+      sup đ
+
 mixin button-more(text)
   .button-more
     button= text
