@@ -6,9 +6,9 @@
       i.fa.fa-bars.header__list__icon
       ul.header__list__menu
         each item in headerMainMenuListMenu
-          if item == 'Rượu vang đỏ'
+          if item.name == 'Rượu vang đỏ'
             li 
-              a.header__list__item(href='#')= item
+              a.header__list__item(href=item.link)= item.name
               .header__list__sub
                 each valTitle in headerMainMenuListMenuSubTitle
                   .header__sub__title
@@ -22,4 +22,4 @@
                 .header__sub__triangle
           else
             li 
-              a.header__list__item(href='#')= item
+              a.header__list__item(href=item.link)= item.name

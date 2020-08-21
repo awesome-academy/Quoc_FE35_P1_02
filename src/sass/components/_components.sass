@@ -15,6 +15,12 @@
     color: initial
     font-size: $font-size-title-product
 
+.price-product
+  p
+    color: $color-hover
+    font-family: utm-caviar
+    font-size: $font-size-sale-price
+
 .button-more
   button
     width: 115px
@@ -135,6 +141,7 @@
     p 
       color: $color-black
       font-size: $font-size-product-title
+
   &__price
     display: flex
     justify-content: center
@@ -195,7 +202,6 @@
       opacity: 1
     
 .blog__item
-
   &__image
     position: relative
 
@@ -203,15 +209,12 @@
       width: 100%
 
     &:hover
-
       .blog__image__hover
-
         .blog__hover__bg, .blog__hover__icon i
           visibility: visible
           opacity: 1
 
     .blog__image__hover
-
       .blog__hover__bg
         position: absolute
         top: 0
@@ -220,7 +223,7 @@
         height: 100%
         visibility: hidden
         opacity: 0
-        background: linear-gradient(to bottom right, transparent 50%, $color-hover-blog 50% )
+        background: linear-gradient(to bottom right, transparent 50%, $color-blog-hover 50% )
         @include transition
 
       .blog__hover__icon
