@@ -28,6 +28,10 @@ mixin button-big(text)
   .button-big
     button= text
 
+mixin button-address(text)
+  .button-address
+    button= text
+
 mixin button-add-to-cart
   .button-add-to-cart
     button ADD TO CART
@@ -65,13 +69,13 @@ mixin product(link, title, price, old, text)
     if text !== ''
       +corner-small(text)(style!=attributes.style)
     .product__compare
-      a(href='#')
+      a(href='./error.html')
         i.fa.fa-heart
         p Yêu thích
-      a(href='#')
+      a(href='./error.html')
         i.fa.fa-signal
         p So sánh
-      a(href='#')
+      a(href='./error.html')
         i.fa.fa-compress
 
 mixin product-list(link, title, price, content)
@@ -84,10 +88,10 @@ mixin product-list(link, title, price, content)
       p= content
       .product-list__right__add
         +button-add-to-cart
-        a(href='#')
+        a(href='./error.html')
           i.fa.fa-heart
           p Yêu thích
-        a(href='#')
+        a(href='./error.html')
           i.fa.fa-signal
           p So sánh
 
@@ -97,7 +101,7 @@ mixin index-images-item(link)
     .index__item__hover
       p 1987
       p RƯỢU
-      a(href='#')
+      a(href='./error.html')
 
 mixin blog-item(link, text1, text2, text3, readMore)
   .blog-item
@@ -151,6 +155,12 @@ mixin register-link
 mixin order-link
   +link(orderLink)
 
+mixin address-link
+  +link(addressLink)
+
+mixin contact-link
+  +link(contactLink)
+
 mixin products-banner
   .products__banner
     .wrapper
@@ -166,7 +176,7 @@ mixin products-content
             ul
               each item in productsContentLeftList
                 li 
-                  a(href='#')= item
+                  a(href='./error.html')= item
           .products__left__compare
             +title-product-small('SO SÁNH SẢN PHẨM', true)
             p Bạn chưa có sản phẩm nào để so sánh
@@ -187,14 +197,14 @@ mixin products-content
                 a(href='./products-list.html')
                   i.fa.fa-th-list
             .products__pag__right
-              a(href='#')
+              a(href='./error.html')
                 i.fa.fa-caret-left
               - for (var i = 1; i < 6; i++)
                 if i == 2
-                  a.active(href="#")= i
+                  a.active(href="./error.html")= i
                 else
-                  a(href="#")= i
-              a(href='#')
+                  a(href="./error.html")= i
+              a(href='./error.html')
                 i.fa.fa-caret-right
           block products-right-items
 
@@ -240,3 +250,18 @@ mixin comment(text1, text2, text3)
         p Trả lời
     .comment__content
       p= text3
+    
+mixin address-1
+  .address-1
+    each item in address
+      +input-text(item.name, false, item.value)
+    +input-checkbox('Đặt làm địa chỉ mặc định', "")
+    .address-1__btn
+      +button-address('Chỉnh sửa địa chỉ')
+      +button-address('Xóa')
+
+mixin address-2
+  .address-2
+    each item in address
+      +input-text(item.name, false, item.value)
+    a(href='./error.html') Chỉnh sửa địa chỉ

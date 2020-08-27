@@ -1,8 +1,8 @@
 -
   const headerTopMenu = [
-    {name: 'Tài khoản của tôi', link: '#'}, 
+    {name: 'Tài khoản của tôi', link: './address.html'}, 
     {name: 'Trạng thái đơn hàng', link: './order.html'}, 
-    {name: 'Danh sách ưa thích', link: '#'}, 
+    {name: 'Danh sách ưa thích', link: './error.html'}, 
     {name: 'Giỏ hàng', link: './cart.html'}, 
     {name: 'Đặng nhập', link: './login.html'}, 
     {name: 'Đăng ký', link: './register.html'}, 
@@ -13,7 +13,7 @@
     {name: 'Trang chủ', link: './index.html'}, 
     {name: 'Rượu vang đỏ', link: './detail.html'}, 
     {name: 'Rượu vang trắng', link: './products-grid.html'}, 
-    {name: 'Champagne', link: '#'}, 
+    {name: 'Champagne', link: './error.html'}, 
     {name: 'Thông tin', link: './introduce.html'}, 
     {name: 'Blog', link: './blog.html'}, 
     {name: 'Liên hệ', link: './contact.html'}, 
@@ -86,14 +86,14 @@
 
 -
   const indexNewProduct = [
-    {link:'./assets/images/product-1.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', corner: 'Sale', color: '#dfa949'}, 
+    {link:'./assets/images/product-1.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', corner: 'Sale', color: './error.htmldfa949'}, 
     {link:'./assets/images/product-2.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', corner: 'Mới', color: 'green'}, 
     {link:'./assets/images/product-3.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', corner: 'Hot', color: 'red'}, 
     {link:'./assets/images/product-4.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', corner: '', color: ''}, 
     {link:'./assets/images/product-5.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', corner: 'Sale', color: 'red'}, 
     {link:'./assets/images/product-6.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', corner: '', color: ''}, 
     {link:'./assets/images/product-7.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', corner: 'Hot', color: 'green'}, 
-    {link:'./assets/images/product-8.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', corner: 'Mới', color: '#dfa949'}, 
+    {link:'./assets/images/product-8.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', corner: 'Mới', color: './error.htmldfa949'}, 
   ]
 
 -
@@ -119,14 +119,14 @@
 -
   const detailLink = [
     {name: 'Trang chủ', link: './index.html'}, 
-    {name: 'Sản phẩm', link: '#'}, 
+    {name: 'Sản phẩm', link: './error.html'}, 
     {name: 'Rượu vang đỏ', link: './detail.html'}, 
   ]
 
 -
   const cartLink = [
     {name: 'Trang chủ', link: './index.html'}, 
-    {name: 'Sản phẩm', link: '#'}, 
+    {name: 'Sản phẩm', link: './error.html'}, 
     {name: 'Giỏ hàng', link: './cart.html'}, 
   ]
 
@@ -161,6 +161,18 @@
   ]
 
 -
+  const addressLink = [
+    {name: 'Trang chủ', link: './index.html'},
+    {name: 'Địa chỉ', link: './address.html'},
+  ]
+
+-
+  const contactLink = [
+    {name: 'Trang chủ', link: './index.html'},
+    {name: 'Liên hệ', link: './contact.html'},
+  ]
+
+-
   const detailMainRightReview = [
     'fa fa-star', 
     'fa fa-star', 
@@ -171,9 +183,9 @@
 
 -
   const detailMainRightColor = [
-    '#e6ae48', 
-    '#030102', 
-    '#9c0001', 
+    './error.htmle6ae48', 
+    './error.html030102', 
+    './error.html9c0001', 
   ]
 
 -
@@ -352,12 +364,12 @@
 
 -
   const orderList = [
-    {num: '01', name: 'LEANHGIANG89 - 17/06/2015', time: '01:36 14/03/2015', store: 'HÀ ĐÔNG', quantity: '7', sum: '350.000', status: 'Đã thanh toán', action: 'Chi tiết'},
-    {num: '02', name: 'LEANHGIANG89 - 17/06/2015', time: '01:36 14/03/2015', store: 'HÀ ĐÔNG', quantity: '7', sum: '350.000', status: 'Đã thanh toán', action: 'Chi tiết'},
-    {num: '03', name: 'LEANHGIANG89 - 17/06/2015', time: '01:36 14/03/2015', store: 'HÀ ĐÔNG', quantity: '7', sum: '350.000', status: 'Đã thanh toán', action: 'Chi tiết'},
-    {num: '04', name: 'LEANHGIANG89 - 17/06/2015', time: '01:36 14/03/2015', store: 'HÀ ĐÔNG', quantity: '7', sum: '350.000', status: 'Đã thanh toán', action: 'Chi tiết'},
-    {num: '05', name: 'LEANHGIANG89 - 17/06/2015', time: '01:36 14/03/2015', store: 'HÀ ĐÔNG', quantity: '7', sum: '350.000', status: 'Đã thanh toán', action: 'Chi tiết'},
-    {num: '06', name: 'LEANHGIANG89 - 17/06/2015', time: '01:36 14/03/2015', store: 'HÀ ĐÔNG', quantity: '7', sum: '350.000', status: 'Đã thanh toán', action: 'Chi tiết'}
+    {num: '01', name: 'LEANHGIANG89 - 17/06/2015', time: '01:36 14/03/2015', store: 'HÀ ĐÔNG', quantity: '7', sum: '350.000đ', status: 'Đã thanh toán', action: 'Chi tiết'},
+    {num: '02', name: 'LEANHGIANG89 - 17/06/2015', time: '01:36 14/03/2015', store: 'HÀ ĐÔNG', quantity: '7', sum: '350.000đ', status: 'Đã thanh toán', action: 'Chi tiết'},
+    {num: '03', name: 'LEANHGIANG89 - 17/06/2015', time: '01:36 14/03/2015', store: 'HÀ ĐÔNG', quantity: '7', sum: '350.000đ', status: 'Đã thanh toán', action: 'Chi tiết'},
+    {num: '04', name: 'LEANHGIANG89 - 17/06/2015', time: '01:36 14/03/2015', store: 'HÀ ĐÔNG', quantity: '7', sum: '350.000đ', status: 'Đã thanh toán', action: 'Chi tiết'},
+    {num: '05', name: 'LEANHGIANG89 - 17/06/2015', time: '01:36 14/03/2015', store: 'HÀ ĐÔNG', quantity: '7', sum: '350.000đ', status: 'Đã thanh toán', action: 'Chi tiết'},
+    {num: '06', name: 'LEANHGIANG89 - 17/06/2015', time: '01:36 14/03/2015', store: 'HÀ ĐÔNG', quantity: '7', sum: '350.000đ', status: 'Đã thanh toán', action: 'Chi tiết'}
   ]
 
 -
@@ -365,4 +377,32 @@
     {class: 'fa fa-user', content: 'GiangLe Leanhgiang89@gmail.com'},
     {class: 'fa fa-map-marker', content: 'Tòa nhà Hà Nội group 442 Đội Cấn, Ba Đình Hà Nội'},
     {class: 'fa fa-phone', content: '(04) 3786 8904'},
+  ]
+
+-
+  const address = [
+    {name: 'Tên', value: 'Giang'},
+    {name: 'Họ & tên đệm', value: 'Lê Anh'},
+    {name: 'Công ty', value: 'Cổ phần công nghệ DKT'},
+    {name: 'Địa chỉ', value: 'Tòa nhà Hà Nội Group, 442 Đội Cấn, Ba Đình, Hà Nội'},
+    {name: 'Thành phố', value: 'Hà Nội'},
+    {name: 'Quốc tịch', value: 'Việt Nam'},
+    {name: 'Postal/Zip Code', value: '2300089'},
+    {name: 'Phone', value: '0974554928'},
+  ]
+
+-
+  const contactInfo = [
+    {class: 'fa fa-map-marker', content: 'Tầng 4, Tòa nhà Hà Nội Group 442 Đội Cấn, P. Cống Vị, Q. Ba Đình, Hà Nội'},
+    {class: 'fa fa-phone', content: '(04) 6674 2332'},
+    {class: 'fa fa-envelope', content: 'support@milano.com'}
+  ]
+
+-
+  const contactSocial = [
+    'fa fa-facebook',
+    'fa fa-google-plus',
+    'fa fa-twitter',
+    'fa fa-youtube-play',
+    'fa fa-pinterest',
   ]
