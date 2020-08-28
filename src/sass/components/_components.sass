@@ -45,10 +45,19 @@
   button
     height: 45px
     @include pl-pr(45px, 45px)
-    @extend %button-small
+    @extend %button-big
 
     &:hover
       background-color: $color-hover
+
+.button-address
+  button
+    height: 37px
+    @include pl-pr(18px, 18px)
+    @extend %button-address
+
+    &:hover
+      background-color: $color-hover !important 
 
 .button-add-to-cart
   button
@@ -458,4 +467,22 @@
   
 .input-text, .textarea-text
   display: flex
-  
+
+.input-checkbox
+  input
+    position: relative
+    visibility: hidden
+
+    &::after
+      position: absolute
+      visibility: visible
+      content: ""
+      top: 25%
+      left: 0
+      width: 6px
+      height: 6px
+      border: 1px solid $color-border
+      background-color: $color-border
+
+    &:checked::after
+      background-color: $color-hover
